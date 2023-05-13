@@ -3,7 +3,7 @@
 REM Define variables
 set "destinationFolder=%USERPROFILE%\UpdateX"
 set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\UpdateX.lnk"
-set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\UpdateX-Windows.lnk"
+set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\UpdateX.lnk"
 set "updateScriptPath=%destinationFolder%\UpdateX.bat"
 set "updateUpdateScriptPath=%destinationFolder%\Update UpdateX.bat"
 set "updateUpdateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update UpdateX.lnk"
