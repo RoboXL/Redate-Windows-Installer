@@ -6,7 +6,7 @@ set "tempDir=%TEMP%"
 set "downloadPath=%tempDir%\UpdateX-Windows.zip"
 set "extractPath=%tempDir%\UpdateX-Windows"
 set "scriptPath=%extractPath%\UpdateX-Windows-main\UpdateX-Windows.bat"
-set "destinationFolder=%USERPROFILE%\Scripts"
+set "destinationFolder=%USERPROFILE%\UpdateX"
 set "destinationPath=%destinationFolder%\UpdateX-Windows.bat"
 set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\UpdateX-Windows.lnk"
 
