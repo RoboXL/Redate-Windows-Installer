@@ -19,7 +19,6 @@ set /p "choice=Do you want to continue with the uninstallation? (Y/N): "
 if /i "%choice%" neq "Y" exit
 
 REM Delete the UpdateX script and its folder
-del /F /Q "%destinationFolder%\UpdateX.bat"
 del /F /Q "%updateScriptPath%"
 del /F /Q "%updateUpdateScriptPath%"
 rmdir "%destinationFolder%" /Q
@@ -28,7 +27,6 @@ REM Delete the UpdateX-Windows shortcut from the Start Menu folder
 del /F /Q "%shortcutPath%"
 
 REM Delete the UpdateX Update script shortcut from the Start Menu folder
-del /F /Q "%updateShortcutPath%"
 del /F /Q "%updateUpdateShortcutPath%"
 
 echo.
