@@ -9,10 +9,14 @@ set "updateUpdateScriptPath=%destinationFolder%\Update UpdateX.bat"
 set "updateUpdateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update UpdateX.lnk"
 
 REM Prompt to confirm uninstallation
+echo ------------------------------
 echo UpdateX-Windows Uninstallation
+echo ------------------------------
 echo.
 echo This script will uninstall UpdateX-Windows from the following location:
+echo -----------------------------
 echo  %destinationFolder%
+echo -----------------------------
 echo.
 
 set /p "choice=Do you want to continue with the uninstallation? (Y/N): "
