@@ -67,7 +67,9 @@ rmdir "%extractPath%" /S /Q
 cls
 
 echo ""
+echo --------------------------------------
 echo UpdateX-Windows installation completed.
+echo --------------------------------------
 echo ""
 pause
 
