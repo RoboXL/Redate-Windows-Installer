@@ -20,7 +20,7 @@ echo ----------------------------
 echo ""
 echo Run this again to update UpdateX
 echo ""
-echo This script will install UpdateX-Windows to the following location:
+echo Hey %username%.This script will install UpdateX-Windows to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
