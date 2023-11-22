@@ -12,12 +12,12 @@ REM Prompt to confirm uninstallation
 echo ------------------------------
 echo Redate-Windows Uninstallation
 echo ------------------------------
-echo.
+echo:
 echo This script will uninstall Redate-Windows from the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
-echo.
+echo:
 
 set /p "choice=Do you want to continue with the uninstallation? (Y/N): "
 if /i "%choice%" neq "Y" exit
@@ -33,7 +33,7 @@ del /F /Q "%shortcutPath%"
 REM Delete the Redate Update script shortcut from the Start Menu folder
 del /F /Q "%updateUpdateShortcutPath%"
 
-echo.
+echo:
 echo Redate-Windows uninstallation completed.
-echo.
+echo:
 pause

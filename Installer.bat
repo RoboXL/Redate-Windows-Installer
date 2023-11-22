@@ -17,28 +17,28 @@ REM Prompt to confirm installation
 echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
-echo .
+echo:
 echo Hey %username%.This script will install Redate-Windows to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
-echo .
+echo:
 
 set /p "choice=Do you want to continue with the installation? (Y/N): "
 if /i "%choice%" neq "Y" exit
 
 REM Download the repository zip file
-echo ""
+echo:
 echo --------------------------------------
 powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('%repoUrl%', '%downloadPath%')"
 echo --------------------------------------
-echo ""
+echo:
 
 REM Extract the contents of the zip file
 echo --------------------------------------
 powershell.exe -Command "Expand-Archive -Path '%downloadPath%' -DestinationPath '%extractPath%' -Force"
 echo --------------------------------------
-echo ""
+echo:
 
 REM Create the destination folder if it doesn't exist
 mkdir "%destinationFolder%" 2>nul
@@ -47,7 +47,7 @@ REM Move the scripts to the desired locations
 echo --------------------------------------
 move /Y "%scriptPath%" "%destinationPath%"
 echo --------------------------------------
-echo ""
+echo:
 echo --------------------------------------
 move /Y "%updateScriptPath%" "%updateScriptDestinationPath%"
 echo --------------------------------------
@@ -64,11 +64,11 @@ rmdir "%extractPath%" /S /Q
 
 cls
 
-echo ""
+echo:
 echo --------------------------------------
 echo Redate-Windows installation completed.
 echo --------------------------------------
-echo ""
+echo:
 pause
 
 
