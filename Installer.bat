@@ -1,30 +1,28 @@
 @echo off
 
 REM Define variables
-set "repoUrl=https://github.com/RoboXL/UpdateX-Windows/archive/refs/heads/main.zip"
+set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/main.zip"
 set "tempDir=%TEMP%"
-set "downloadPath=%tempDir%\UpdateX.zip"
-set "extractPath=%tempDir%\UpdateX"
-set "scriptPath=%extractPath%\UpdateX-Windows-main\UpdateX.bat"
-set "updateScriptPath=%extractPath%\UpdateX-Windows-main\Update UpdateX.bat"
-set "destinationFolder=%USERPROFILE%\UpdateX"
+set "downloadPath=%tempDir%\Redate.zip"
+set "extractPath=%tempDir%\Redate"
+set "scriptPath=%extractPath%\Redate-Windows-main\Redate.bat"
+set "updateScriptPath=%extractPath%\Redate-Windows-main\Update Redate.bat"
+set "destinationFolder=%USERPROFILE%\Redate"
 set "destinationPath=%destinationFolder%\UpdateX.bat"
-set "updateScriptDestinationPath=%destinationFolder%\Update UpdateX.bat"
-set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\UpdateX.lnk"
-set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update UpdateX.lnk"
+set "updateScriptDestinationPath=%destinationFolder%\Update Redate.bat"
+set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
+set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
 
 REM Prompt to confirm installation
 echo ----------------------------
-echo UpdateX-Windows installation
+echo Redate-Windows installation
 echo ----------------------------
-echo ""
-echo Run this again to update UpdateX
-echo ""
-echo Hey %username%.This script will install UpdateX-Windows to the following location:
+echo .
+echo Hey %username%.This script will install Redate-Windows to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
-echo ""
+echo .
 
 set /p "choice=Do you want to continue with the installation? (Y/N): "
 if /i "%choice%" neq "Y" exit
@@ -68,7 +66,7 @@ cls
 
 echo ""
 echo --------------------------------------
-echo UpdateX-Windows installation completed.
+echo Redate-Windows installation completed.
 echo --------------------------------------
 echo ""
 pause
