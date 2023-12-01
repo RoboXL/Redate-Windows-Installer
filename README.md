@@ -2,4 +2,5 @@
 Install's Redate to windows
 
 Search and open to move it to the first row of the search
-![image](https://github.com/RoboXL/UpdateX-Windows-Installer/assets/105053104/a410ca0d-6011-4f4b-83f6-9fe2c251ca5b)
+![image](https://github.com/RoboXL/Redate-Windows-Installer/assets/105053104/47aaab58-20c4-4d89-835b-24d206eef2e2)
+
