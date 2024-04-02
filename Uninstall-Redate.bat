@@ -1,9 +1,11 @@
-@echo off
+
 
 REM Define variables
 set "destinationFolder=%USERPROFILE%\Redate"
 set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
+set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
 set "updateScriptPath=%destinationFolder%\Redate.bat"
+set "adminScriptPath=%destinationFolder%\Redate.bat"
 set "updateUpdateScriptPath=%destinationFolder%\Update Redate.bat"
 set "updateUpdateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
 
