@@ -1,7 +1,7 @@
 @echo off
 
 REM Define variables
-set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/main.zip"
+set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/dev.zip"
 set "tempDir=%TEMP%"
 set "downloadPath=%tempDir%\Redate.zip"
 set "extractPath=%tempDir%\Redate"
@@ -10,15 +10,15 @@ set "updateScriptPath=%extractPath%\Redate-Windows-main\Update Redate.bat"
 set "destinationFolder=%USERPROFILE%\Redate"
 set "destinationPath=%destinationFolder%\UpdateX.bat"
 set "updateScriptDestinationPath=%destinationFolder%\Update Redate.bat"
-set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
-set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
+set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Redate.lnk"
+set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Update Redate.lnk"
 
 REM Prompt to confirm installation
 echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
 echo:
-echo Hey %username%.This script will install Redate-Windows to the following location:
+echo Hey %username%.This script will install Redate-Windows Beta to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
@@ -65,9 +65,9 @@ rmdir "%extractPath%" /S /Q
 cls
 
 echo:
-echo --------------------------------------
-echo Redate-Windows installation completed.
-echo --------------------------------------
+echo:---------------------------------------------------
+echo: Redate-Windows installation completed. Test away!
+echo:---------------------------------------------------
 echo:
 pause
 
