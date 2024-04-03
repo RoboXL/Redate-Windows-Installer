@@ -1,14 +1,14 @@
 @echo off
 
 REM Define variables
-set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/main.zip"
+set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/dev.zip"
 set "tempDir=%TEMP%"
 set "downloadPath=%tempDir%\Redate.zip"
 set "extractPath=%tempDir%\Redate"
-set "scriptPath=%extractPath%\Redate-Windows-main\Redate.bat"
-set "updateScriptPath=%extractPath%\Redate-Windows-main\Update Redate.bat"
+set "scriptPath=%extractPath%\Redate-Windows-dev\Redate.bat"
+set "updateScriptPath=%extractPath%\Redate-Windows-dev\Update Redate.bat"
 set "destinationFolder=%USERPROFILE%\Redate"
-set "destinationPath=%destinationFolder%\UpdateX.bat"
+set "destinationPath=%destinationFolder%\Redate.bat"
 set "updateScriptDestinationPath=%destinationFolder%\Update Redate.bat"
 set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
 set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
@@ -18,11 +18,7 @@ echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
 echo:
-<<<<<<< Updated upstream
-echo Hey %username%.This script will install Redate-Windows to the following location:
-=======
-echo Hey %username% This script will install Redate-Windows Beta to the following location:
->>>>>>> Stashed changes
+echo Hey %username%.This script will install Redate-Windows Beta to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
@@ -66,18 +62,12 @@ REM Clean up temporary files
 del "%downloadPath%" /F /Q
 rmdir "%extractPath%" /S /Q
 
-cls
+
 
 echo:
-<<<<<<< Updated upstream
-echo --------------------------------------
-echo Redate-Windows installation completed.
-echo --------------------------------------
-=======
-echo:----------------------------------------
-echo: Redate-Windows installation completed.
-echo:----------------------------------------
->>>>>>> Stashed changes
+echo:---------------------------------------------------
+echo: Redate-Windows installation completed. Test away!
+echo:---------------------------------------------------
 echo:
 pause
 
