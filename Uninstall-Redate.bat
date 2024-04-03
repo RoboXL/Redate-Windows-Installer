@@ -2,11 +2,10 @@
 
 REM Define variables
 set "destinationFolder=%USERPROFILE%\Redate"
-set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Redate.lnk"
-set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
+set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
 set "updateScriptPath=%destinationFolder%\Redate.bat"
 set "updateUpdateScriptPath=%destinationFolder%\Update Redate.bat"
-set "updateUpdateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Update Redate.lnk"
+set "updateUpdateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
 
 REM Prompt to confirm uninstallation
 echo ------------------------------

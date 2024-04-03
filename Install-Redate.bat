@@ -5,13 +5,13 @@ set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/dev.zip
 set "tempDir=%TEMP%"
 set "downloadPath=%tempDir%\Redate.zip"
 set "extractPath=%tempDir%\Redate"
-set "scriptPath=%extractPath%\Redate-Windows-main\Redate.bat"
-set "updateScriptPath=%extractPath%\Redate-Windows-main\Update Redate.bat"
+set "scriptPath=%extractPath%\Redate-Windows-dev\Redate.bat"
+set "updateScriptPath=%extractPath%\Redate-Windows-dev\Update Redate.bat"
 set "destinationFolder=%USERPROFILE%\Redate"
 set "destinationPath=%destinationFolder%\UpdateX.bat"
 set "updateScriptDestinationPath=%destinationFolder%\Update Redate.bat"
-set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Redate.lnk"
-set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate\Update Redate.lnk"
+set "shortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Redate.lnk"
+set "updateShortcutPath=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Update Redate.lnk"
 
 REM Prompt to confirm installation
 echo ----------------------------
@@ -62,7 +62,7 @@ REM Clean up temporary files
 del "%downloadPath%" /F /Q
 rmdir "%extractPath%" /S /Q
 
-cls
+
 
 echo:
 echo:---------------------------------------------------
