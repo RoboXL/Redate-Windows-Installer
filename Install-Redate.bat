@@ -1,12 +1,12 @@
 @echo off
 
 REM Define variables
-set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/dev.zip"
+set "repoUrl=https://github.com/RoboXL/Redate-Windows/archive/refs/heads/main.zip"
 set "tempDir=%TEMP%"
 set "downloadPath=%tempDir%\Redate.zip"
 set "extractPath=%tempDir%\Redate"
-set "scriptPath=%extractPath%\Redate-Windows-dev\Redate.bat"
-set "updateScriptPath=%extractPath%\Redate-Windows-dev\Update Redate.bat"
+set "scriptPath=%extractPath%\Redate-Windows-main\Redate.bat"
+set "updateScriptPath=%extractPath%\Redate-Windows-main\Update Redate.bat"
 set "destinationFolder=%USERPROFILE%\Redate"
 set "destinationPath=%destinationFolder%\Redate.bat"
 set "updateScriptDestinationPath=%destinationFolder%\Update Redate.bat"
@@ -18,7 +18,7 @@ echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
 echo:
-echo Hey %username%.This script will install Redate-Windows Beta to the following location:
+echo Hey %username% This script will install Redate-Windows Beta to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
@@ -65,9 +65,9 @@ rmdir "%extractPath%" /S /Q
 
 
 echo:
-echo:---------------------------------------------------
-echo: Redate-Windows installation completed. Test away!
-echo:---------------------------------------------------
+echo:----------------------------------------
+echo: Redate-Windows installation completed.
+echo:----------------------------------------
 echo:
 pause
 
