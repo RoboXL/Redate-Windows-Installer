@@ -18,7 +18,11 @@ echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
 echo:
+<<<<<<< Updated upstream
 echo Hey %username%.This script will install Redate-Windows to the following location:
+=======
+echo Hey %username% This script will install Redate-Windows Beta to the following location:
+>>>>>>> Stashed changes
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
@@ -65,9 +69,15 @@ rmdir "%extractPath%" /S /Q
 cls
 
 echo:
+<<<<<<< Updated upstream
 echo --------------------------------------
 echo Redate-Windows installation completed.
 echo --------------------------------------
+=======
+echo:----------------------------------------
+echo: Redate-Windows installation completed.
+echo:----------------------------------------
+>>>>>>> Stashed changes
 echo:
 pause
 
