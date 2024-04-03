@@ -1,4 +1,4 @@
-
+@echo off
 
 REM Define variables
 set "destinationFolder=%USERPROFILE%\Redate"
