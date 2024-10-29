@@ -18,7 +18,7 @@ echo ----------------------------
 echo Redate-Windows installation
 echo ----------------------------
 echo:
-echo Hey %username% This script will install Redate-Windows Beta to the following location:
+echo Hey %username% This script will install Redate-Windows to the following location:
 echo -----------------------------
 echo  %destinationFolder%
 echo -----------------------------
